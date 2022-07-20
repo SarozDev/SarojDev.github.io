@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+
+        .blk{
+            background-color: black;
+        }
+        .wht{
+            color:white;
+        }
+        .gray{
+            color:darkgray
+        }
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            flex: wrap;
+            justify-content: space-evenly;
+            padding: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+        ul li{
+            margin: 0 5px 0 -15px;
+            color: white;
+            list-style-image: url('/images/tweet.png');
+        }
+
+        .pad5{
+            padding-right:10px;
+        }
+
+        .flex-input {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid grey; */
+            /* padding: 2px; */
+            border-radius: 50px; 
+        }
+
+        input[type="text"] {
+            width: 200px;
+            height: 30px;
+            padding-right: 50px;
+            border: 3px solid black;
+            border-radius: 30px;
+        }
+
+        .mrg3{
+            margin-right: 3%;
+        }
+
+        .footer-style{
+            bottom:0;width:100%;position:fixed;margin-bottom: 5px;
+        }
+
+        .hr1{
+            width:83%;float:left;
+        }
+
+        .pad20{
+            padding:20px;;
+        }
+
+        .flt-rt{
+            width:20%;float:right;
+        }
+
+input[type="submit"] {
+    margin-left: -50px;
+    height: 38px;
+    width: 50px;
+    background: orange;
+    color: white;
+    border: 3px solid black;
+    border-left: 0;
+    border-radius: 0 30px 30px 0;
+    -webkit-appearance: none;
+}
+    </style>
+</head>
+
+<body class="blk">
+<div style="padding:90px;">
+    <div class="flex-container">
+        <div>
+            <h3 class="wht"> About Us</h3>
+            <p class="gray">Lorem ipsum dolor sit amet consectetur <br>
+                adipisicing elit.
+                 Sit eos debitis necessitatibus? Rerum, est
+                ducimus? </p>
+            <i class="glyphicon glyphicon-envelope"></i>
+
+            <h3><pre class="wht"><img class="mrg3" src="/images/call.png">+1 291 3912 329</pre></h3>
+            <h3><pre class="wht"><img class="mrg3" src="/images/email.png"> <strong>info@gmail.com</strong></pre></h3>
+
+            
+                <input type="text" placeholder="Enter your email">
+                <input type="submit" value="Send">
+            
+
+        </div>
+
+        <div>
+            <h3 class="wht">Latest Tweet</h3>
+
+            <ul>
+                <li>
+                    <p class="gray" style="font-style: italic">Lorem ipsum dolor sit, amet consectetur <br>
+                         adipisicing elit. Ad fugit id laborum excepturi </p>
+
+                </li>
+                <li>
+                    <p class="gray" style="font-style: italic">Lorem ipsum dolor sit, amet consectetur <br>a
+                        dipisicing elit. Ad fugit id laborum excepturi </p>
+
+                </li>
+                <li>
+                    <p class="gray" style="font-style: italic">Lorem ipsum dolor sit, amet consectetur <br>
+                        adipisicing elit. Ad fugit id laborum excepturi </p>
+
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="wht">Instagram</h3>
+            <div  class="grid-container">
+                <img src="/images/Me.jpg" width="110">
+                <img src="/images/Me.jpg" width="110">
+                <img src="/images/Me.jpg" width="110">
+                <img src="/images/Me.jpg" width="110">
+            </div>
+        </div>
+
+        
+    </div>
+    
+        <footer class="footer-style">
+            <hr class="hr1">
+            <div class="wht pad20">
+                
+                <label class="pad5">Home</label>
+                <label class="pad5">About</label>
+                <label class="pad5">Our Works</label>
+                <label class="pad5">Services</label>
+                <label class="pad5">Blog</label>
+                <label class="pad5"> Contacts</label>
+                <label class="flt-rt"><strong>Colorlib</strong></label>
+            </div>
+            
+        </footer>
+</div>
+
+    
+</body>
+
+</html>
