@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            padding: 12px;
+        }
+
+        .flex-menu {
+            display: flex;
+            gap: 20px;
+            padding: 1.2%;
+            color: gray;
+        }
+
+        .flex-menu-right {
+            display: flex;
+            gap: 20px;
+            padding: 1.2%;
+            color: gray;
+            margin-left: auto;
+        }
+
+        input[type=text] {
+            width: 200%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('..∫/images/search-icon.png');
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+        }
+
+        .grid-container {
+            display: flex;
+            grid-template-columns: 2fr 1fr;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .pad15 {
+            padding: 15px;
+        }
+
+        .domain {
+            font-family: gdsherpa, Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .get {
+            font-size: 2rem;
+
+
+        }
+
+        .button {
+            display: block;
+            width: 135px;
+            height: 25px;
+            background: black;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            line-height: 25px;
+            margin-top: 20px;
+        }
+
+        .grid-container-tile {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            background-color: white;
+            padding: 15px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgb(221, 216, 216);
+            padding: 20px;
+            font-size: 15px;
+            text-align: center;
+
+        }
+
+        .menu-item {
+            /* grid-area: menu; */
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        hr {
+            background-color: aquamarine;
+        }
+
+        .flex-container-menu {
+            color:white;
+            width: 100px;
+            margin-right: 10%;
+            text-align: center;
+            line-height: 15px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <a><img src="../images/godaddy-logo.png" width="150px"></a>
+
+        <div class="flex-menu">
+            <label>Domain Names</label>
+            <label>Websites</label>
+            <label>Commerce</label>
+            <label>Email & Marketing</label>
+            <label>More</label>
+        </div>
+
+        <div class="flex-menu-right">
+            <label>Hire an Expert</label>
+            <label>Help Center</label>
+            <label>Sign In</label>
+            <img src="../images/cart.png" width="30">
+        </div>
+    </div>
+
+    <div style="padding: 15px;display: flex;">
+        <form>
+            <input type="text" name="search" placeholder="Search..">
+        </form>
+        <div class="flex-menu-right">
+            <label>1.99</label>
+            <label><strong>.net</strong>14.99*</label>
+            <label>2.99</label>
+            <label>1.99*</label>
+        </div>
+    </div>
+
+    <div class="grid-container">
+
+        <img src="../images/marquee.png" width="70%" class="pad15">
+
+        <div style="background-color: rgb(198, 237, 237);width: 28%;padding:15px;">
+            <div class="headline">
+                <h2 class="domain">Domain Names</h2>
+                <h3 class="get">Grab a .com for just $0.01*/1st yr</h3>
+                <div class="content">
+                    <span class="">2-year purchase required*</span>
+                </div>
+            </div>
+
+            <div>
+                <a class="button">Find Your Domain</a>
+            </div>
+            <p>Transfer Your Domains</p>
+            <p>Domains include free privacy protection forever+ ﻿</p>
+        </div>
+
+    </div>
+
+    <div class="grid-container-tile">
+        <div class="grid-item">Domains</div>
+        <div class="grid-item">SSL Security</div>
+        <div class="grid-item">Websites</div>
+        <div class="grid-item">WordPress</div>
+        <div class="grid-item menu-item">Store Domains</div>
+        <div class="grid-item">Email & Microsoft 365</div>
+        <div class="grid-item">Website Design Services</div>
+        <div class="grid-item">Online Store</div>
+        <div class="grid-item">Web Hosting</div>
+
+    </div>
+
+    <footer style="background-color:black;">
+        <div style="display: flex;height: 10%;">
+
+            <div style="padding:15px;">
+                <label style="margin:15px;" class="text-white">
+                    Sign up for news and special offers
+                </label>
+                <input type="text" style="width: 55%;
+            margin-top: 10px;">
+                <input type="submit" style="width: 20%;height: 63%;" value="SignUp" width="40%">
+
+
+
+            </div>
+
+            <div style="margin-top:10px;margin-left:auto; display:flex;flex-direction: column;">
+                <label class="text-white">We love taking your calls</label>
+                <img src="../images/godaddy-logo.png" width="40%" style="padding:15px">
+
+            </div>
+
+        </div>
+        <hr>
+
+        <div style="display: flex;flex-wrap: nowrap;">
+            <label class="flex-container-menu text-white">About GoDaddy</label>
+            <label class="flex-container-menu text-white">Help Center</label>
+            <label class="flex-container-menu text-white">Resources</label>
+            <label class="flex-container-menu text-white">Partner Programs</label>
+            <label class="flex-container-menu text-white">Account</label>
+            <label class="flex-container-menu text-white">Shopping</label>
+
+        </div>
+
+        <br>
+        <div style="display: flex; align-items:center ">
+            <img src="../images/godaddy-logo.png" style="width: 12%;padding: 15px;">
+            <label><strong class="text-white">United States - English</strong></label>
+            <pre><strong class="text-white">&nbsp;   USD</strong></pre>
+
+            <img src="../images/media.png" style="margin-left:auto;">
+        </div>
+        
+        <hr>
+
+        <div style="display: flex;">
+            <p class="text-white" style="padding: 20px;font-size: smaller;">
+                Copyright © 1999 - 2022 GoDaddy Operating Company, LLC. 
+                All Rights Reserved. The GoDaddy word mark is a registered <br>
+                trademark of GoDaddy Operating Company, LLC in the US and other countries. The “GO” logo is a registered trademark of GoDaddy.com, LLC in the US.
+            </p>
+            <div style="display: flex;margin-left:auto;margin-top:10px;gap:15px;padding:15px;" class="text-white">
+                <label>Legal</label>
+                <label>Privacy Policy</label>
+                <label>Advertising Preferences</label>
+                <label>Cookies</label>
+            </div>
+        </div>
+
+        <br>
+        <div style="display: flex;">
+            <p class="text-white" style="padding: 20px;font-size: smaller;">
+                Use of this Site is subject to express terms of use. By using this site, you signify that you agree to be bound by 
+                these Universal Terms of Service.
+                
+            </p>
+            <div style="display: flex;margin-left:auto;margin-top:10px;gap:15px;padding:15px;" class="text-white">
+                <a href="#" style="color:gray">Do not sell my personal information</a>
+               
+            </div>
+        </div>
+
+       
+
+    </footer>
+
+
+</body>
+
+</html>
